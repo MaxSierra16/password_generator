@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="public/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result">
+          <span id="result"></span>
+          <button class="btn" id="clipboard">
+            <i class="far fa-clipboard"></i>
+          </button>
+        </div>
+        <div class="controls">
+          
+          <div>
+            <label>Number of chars: </label>
+            <input type="number" id="length" min='4' max='20' value='10'>
+          </div>
+          
+          <div class="">
+            <label>Include uppercase: </label>
+            <input type="checkbox" id="uppercase">
+          </div>
+        </div>
+        <input type="button" class="btn big-btn" id="generate" value="Create Password">
+    </div>
+    <script src="public/main.js"></script>
+
+</body>
+</html>
